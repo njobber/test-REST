@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">тест REST</string>
+    <string name="desc">Данное приложение демонстрирует пример работы с тестовым REST сервером jsonplaceholder.typicode.com\nРеализация: Утовка Алексей Александрович</string>
+    <string name="labelId">ID</string>
+    <string name="labelName">Name</string>
+    <string name="labelEmail">Email</string>
+    <string name="labelButtonGet">Show</string>
+    <string name="labelButtonAdd">Add</string>
+    <string name="labelButtonUpdate">Update</string>
+    <string name="labelButtonDelete">Delete</string>
+</resources>

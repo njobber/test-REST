@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/desc"
+        android:padding="5dp"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/userID"
+            android:text="@string/labelId"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="25dp">
+        </TextView>
+        <EditText
+            android:id="@+id/userID"
+            android:inputType="number"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/userName"
+            android:text="@string/labelName"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+        </TextView>
+        <EditText
+            android:id="@+id/userName"
+            android:inputType="text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/userEmail"
+            android:text="@string/labelEmail"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+        </TextView>
+        <EditText
+            android:id="@+id/userEmail"
+            android:inputType="textWebEmailAddress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp">
+        <Button
+            android:id="@+id/buttonGet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labelButtonGet"
+            tools:ignore="ButtonStyle"
+            android:layout_weight="1"
+            android:onClick="clickListener">
+        </Button>
+        <Button
+            android:id="@+id/buttonPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labelButtonAdd"
+            tools:ignore="ButtonStyle"
+            android:layout_weight="1"
+            android:onClick="clickListener">
+        </Button>
+        <Button
+            android:id="@+id/buttonPut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labelButtonUpdate"
+            tools:ignore="ButtonStyle"
+            android:layout_weight="1"
+            android:onClick="clickListener">
+        </Button>
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/labelButtonDelete"
+            tools:ignore="ButtonStyle"
+            android:layout_weight="1"
+            android:onClick="clickListener">
+        </Button>
+    </LinearLayout>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/console"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:isScrollContainer="true"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideInset"
+        android:verticalScrollbarPosition="right"
+        android:fadeScrollbars="false" />
+
+</LinearLayout>
